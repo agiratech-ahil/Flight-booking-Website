@@ -1,0 +1,351 @@
+* {
+  font-family: "Montserrat", sans-serif;
+  color: rgb(29, 29, 97);
+}
+
+.container {
+  width: 100%;
+  height: 150vh;
+  box-sizing: border-box;
+  overflow: hidden;
+  box-shadow: 0px 0px 3px 2px rgb(146, 136, 136);
+  border-radius: 5%;
+}
+.topbox {
+  box-sizing: border-box;
+  margin: 2% 2% 2% 2%;
+  height: 80vh;
+  overflow: hidden;
+  border-radius: 50px;
+  background-image: url(./flight_wings.jpeg);
+  background-repeat: no-repeat;
+  background-size: 1800px 800px;
+}
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.logo {
+  width: 40px;
+  margin: 15px 200px;
+  margin-right: 0px;
+}
+.top {
+  margin-top: 30px;
+  margin-left: 0px;
+  text-align: left;
+  display: grid;
+}
+#hamburger_menu {
+  flex: 1;
+  text-align: right;
+  margin-right: 10%;
+}
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 20px;
+}
+nav ul li a {
+  text-decoration: none;
+}
+.content {
+  margin-left: 11%;
+  margin-top: 7%;
+}
+.content h1 {
+  font-size: 50px;
+  font-weight: 1000;
+}
+.content h4 {
+  font-size: 20px;
+  margin-left: 0%;
+}
+.dropdown {
+  flex: 1;
+  text-align: left;
+  margin-left: 11%;
+  margin-top: 5%;
+}
+.dropdown #trips,
+#Persons,
+#Economy {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  font-weight: 600;
+}
+.dropdown #Persons,
+#Economy {
+  margin-left: 2%;
+}
+
+form {
+  flex: 1;
+  margin-top: 1%;
+  margin-left: 11%;
+}
+form input {
+  height: 4vh;
+  border: none;
+  margin-left: -0.2%;
+  outline: none;
+}
+form > #from {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 8px;
+}
+#on,
+#return {
+  width: 8%;
+}
+form button {
+  width: 10%;
+  height: 4vh;
+  border: none;
+  background-color: #fd5d5d;
+  color: white;
+  font-weight: bold;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 8px;
+  cursor: pointer;
+}
+form button span {
+  color: white;
+
+  margin-left: 15%;
+}
+form i {
+  position: absolute;
+  margin-top: 0.5%;
+}
+.yellow {
+  display: flex;
+  margin-top: 8%;
+  margin-left: 11%;
+}
+div h4 {
+  margin-left: 3%;
+}
+div h4 span {
+  font-weight: 100;
+}
+
+.callme {
+  margin-top: 1%;
+  margin-left: 40%;
+  width: 15%;
+  height: 4vh;
+  text-align: left;
+  font-weight: 500;
+  border-radius: 10px;
+  border-color: rgb(29, 29, 97);
+  background-color: transparent;
+  cursor: pointer;
+}
+.yellowbg {
+  background-color: rgb(247, 247, 91);
+  height: 15vh;
+}
+#secondcall {
+  margin-left: 50%;
+}
+.bottomtitle {
+  margin-left: 12%;
+  font-size: 35px;
+}
+.bottomlist {
+  margin-left: 9%;
+  margin-top: 4%;
+  list-style: none;
+  word-spacing: 1px;
+}
+.bottomlist ul li {
+  display: inline-block;
+  margin-left: 1%;
+  box-sizing: border-box;
+  border: 1px solid black;
+  width: 10%;
+  height: 3vh;
+  border-color: white;
+  border-bottom: 3px solid gainsboro;
+  font-weight: 900;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.blist {
+  margin-left: 5%;
+}
+
+.submenu {
+  display: block;
+}
+.submenu1 > ul {
+  margin-left: 10%;
+  margin-top: 4%;
+  list-style: none;
+  display: flex;
+}
+.euimg {
+  width: 95%;
+  height: 20vh;
+  border-radius: 10px;
+}
+@media only screen and (max-width: 448px) {
+  .content h1 {
+    font-size: 20px;
+    font-weight: 1000;
+  }
+  .content h4 {
+    font-size: 10px;
+    margin-left: 0%;
+  }
+  .top {
+    margin-top: 30px;
+    margin-right: 100%;
+    text-align: left;
+    display: grid;
+    font-size: 15px;
+  }
+  .logo {
+    width: 40px;
+    margin: 15px 20px;
+    margin-right: 0px;
+  }
+  .dropdown {
+    flex: 1;
+    text-align: left;
+    margin-left: 9%;
+    margin-top: 5%;
+    font-size: 5px;
+  }
+  .dropdown #trips,
+  #Persons,
+  #Economy {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 10px;
+    cursor: pointer;
+  }
+  .dropdown #Persons,
+  #Economy {
+    margin-left: 2%;
+  }
+  form {
+    flex: 1;
+    margin-top: 1%;
+    margin-left: 11%;
+    display: grid;
+    margin-right: 50%;
+  }
+  form input {
+    height: 3vh;
+    font-size: 10px;
+    border: none;
+    margin-left: -0.2%;
+    outline: none;
+  }
+
+  #on,
+  #return {
+    width: 97.5%;
+  }
+  form button {
+    width: 100%;
+    height: 4vh;
+    border: none;
+    background-color: #fd5d5d;
+    color: white;
+    font-weight: bold;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  form > #from {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+  form button span {
+    color: white;
+
+    margin-left: 5%;
+  }
+  #two {
+    margin-top: 8%;
+  }
+  #three {
+    margin-top: 15%;
+  }
+  #four {
+    margin-top: 22%;
+  }
+  .yellowbg {
+    display: none;
+  }
+  .topbox {
+    height: 60vh;
+    border-radius: 0px;
+  }
+  .bottomtitle {
+    margin-left: 6%;
+    font-size: 20px;
+  }
+  .bottomlist {
+    margin-left: 0%;
+    margin-top: 4%;
+    list-style: none;
+    word-spacing: 0px;
+  }
+  .bottomlist ul li {
+    font-size: 5px;
+  }
+  .submenu1 > ul {
+    margin-left: 0%;
+    margin-top: 4%;
+    list-style: none;
+    display: flex;
+  }
+  .euimg {
+    height: 10vh;
+  }
+  .container {
+    height: 90vh;
+    box-sizing: none;
+    box-shadow: none;
+  }
+  /* #hamburger_menu {
+    width: 50px;
+    height: 50px;
+    display: block;
+    border: none;
+    padding: 0px;
+    margin: 20px;
+    background: linear-gradient(
+      to bottom,
+      #3d0e61,
+      #3d0e61 20%,
+      white 20%,
+      white 40%,
+      #3d0e61 40%,
+      #3d0e61 60%,
+      white 60%,
+      white 80%,
+      #3d0e61 80%,
+      #3d0e61 100%
+    );
+  }
+  #hamburger-menu #sidebar-menu {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 200px;
+    height: 100%;
+    background-color: #3d0e61;
+    padding: 0px 10px;
+    box-sizing: border-box;
+  } */
+}

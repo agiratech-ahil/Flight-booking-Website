@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./app.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat&family=Poppins:wght@200&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/f411cc5e95.js" crossorigin="anonymous"></script>
+<link rel="icon" href="./basketballlogo.png">
+    <title>Plane Tickets Website</title>
+  </head>
+  <body>
+    <div class="container">
+        <div class="topbox">
+      <div class="navbar">
+        <image class="logo" src="./flight-logo.png"></image>
+        <div class="top"> <span> <b>Business</b></span> <span><b>Flight</b> Direct</span></p></div>
+        <label id="hamburger_menu">
+        <nav id="sidebar_menu">
+          <ul>
+            <li><a href="">Business Class</a></li>
+            <li><a href="">First Class</a></li>
+            <li><a href="">Contact Us</a></li>
+            <li><a href="">FAQ</a></li>
+          </ul>
+       
+        </label>
+      </div>
+      <div class="content">
+          <h1>Best Priced Business Class</h1>
+          <h4>Simple Booking. Easy Savings</h4>
+      </div>
+      <div class="dropdown">
+        <label for="trips"></label>
+        <select id="trips">
+          <option value="Round-Trip" >Round-Trip</option>
+          <option value="One Way">One Way</option>
+          <option value="Straight-away">Straight-away</option>
+          </select>
+          <select id="Persons">
+          <option value="1 Adult" >1 Adult</option>
+          <option value="2 Adults">2 Adults</option>
+          <option value="3 Adults">3 Adults</option>
+          <option value="4 Adults">4 Adults</option>
+          </select>
+          <select id="Economy">
+          <option value="Economy" >Economy</option>
+          <option value="Premium Economy">Premium </option>
+          <option value="Basic Economy">Basic </option>
+          <option value="Standard Economy">Standard </option>
+          </select>
+        
+      </div>
+      <form>
+          <i id="one" class="fa-solid fa-plane-departure"></i><input type="text" id="from" value="       San Francisco,SFO" >
+          <i id="two" class="fa-solid fa-plane-arrival"></i><input type="text" id="to"  value="       To">
+          <i  id="three" class="fa-solid fa-calendar"></i><input type="text" id="on" placeholder="     On" onfocus="(this.type='date')">
+          <i id="four" class="fa-solid fa-calendar"></i><input type="text" id="return"  placeholder="      Return" onfocus="(this.type='date')">
+          <button class="search">Search Flights<span>&#10132;</span></i></button>
+
+      </form>
+      <div class="yellowbg">
+      <div class="yellow">
+        <h1><i id="firstcall" class="fa-solid fa-phone"></i> &nbsp;800-359-3050</h1>
+        <h4><div>Save 10% Off a Booking Right Now!</div>
+        <span>Call in and spell out the code: </span> WEB22</h4>
+        <button class="callme"><strong>Call Me Back</strong><i id="secondcall" class="fa-solid fa-phone"></i></button>
+          </div>
+      </div>
+      </div>
+
+      <div>
+        <h1 class="bottomtitle">Business & First Class Flight Deals</h1>
+        <div class="bottomlist">
+        <ul>
+          <li id="Europe" onclick="changeTab('firstoption')">EUROPE</li>
+          <li id="Asia" onclick="changeTab('secondoption')" class="blist">ASIA</li>
+          
+          <li onclick="changeTab('thirdoption')" id="Africa" class="blist">AFRICA</li>
+          <li onclick="changeTab('fourthoption')" id="Middle_East" class="blist">MIDDLE EAST</li>
+          <li onclick="changeTab('fifthoption')" id='Oceania' class="blist">OCEANIA</li>
+          <li onclick="changeTab('sixthoption')" id="India" class="blist">INDIA & ISC</li>
+        </ul>
+        </div>
+        <div id="firstoption" class="submenu1">
+            <ul>
+              <li><img class="euimg" src="./europe1.jpg"></li>
+              <li><img class="euimg" src="./europe2.jpg"></li>
+              <li><img class="euimg" src="./europe3.jpg"></li>
+              <li><img class="euimg" src="./europe4.jpeg"></li>
+
+            </ul>
+          </div>
+           <div id="secondoption" class="submenu1">
+            <ul>
+              <li><img class="euimg" src="./asia1.jpg"></li>
+              <li><img class="euimg" src="./asia2.jpeg"></li>
+              <li><img class="euimg" src="./asia3.jpg"></li>
+              <li><img class="euimg" src="./asia4.jpg"></li>
+
+            </ul>
+          </div>
+           <div id="thirdoption" class="submenu1">
+            <ul>
+              <li><img class="euimg" src="./africa5.jpg"></li>
+              <li><img class="euimg" src="./africa2.jpg"></li>
+              <li><img class="euimg" src="./africa6.jpg"></li>
+              <li><img class="euimg" src="./africa4.jpg"></li>
+
+            </ul>
+          </div>
+           <div id="fourthoption" class="submenu1">
+            <ul>
+              <li><img class="euimg" src="./middleeast1.jpg"></li>
+              <li><img class="euimg" src="./middleeast2.jpg"></li>
+              <li><img class="euimg" src="./middleeast3.jpg"></li>
+              <li><img class="euimg" src="./middleeast4.jpg"></li>
+
+            </ul>
+          </div>
+          <div id="fifthoption" class="submenu1">
+            <ul>
+              <li><img class="euimg" src="./oceania1.jpg"></li>
+              <li><img class="euimg" src="./oceania2.jpg"></li>
+              <li><img class="euimg" src="./oceania3.jpg"></li>
+              <li><img class="euimg" src="./oceania4.jpg"></li>
+
+            </ul>
+          </div>
+          <div id="sixthoption" class="submenu1">
+            <ul>
+              <li><img class="euimg" src="./india1.jpg"></li>
+              <li><img class="euimg" src="./india2.jpg"></li>
+              <li><img class="euimg" src="./india3.jpg"></li>
+              <li><img class="euimg" src="./india4.jpg"></li>
+
+            </ul>
+          </div>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
